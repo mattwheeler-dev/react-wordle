@@ -1,0 +1,190 @@
+/* GOOGLE FONT IMPORT  [ RALEWAY: 100 - 900 ]*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+
+/* VARIABLES */
+:root {
+	--correct: #007e00;
+	--almost: #c2c200;
+	--dark: #000;
+	--gray: #505050;
+	--accent: #02d1bc;
+}
+
+/* GLOBAL DEFAULTS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+	letter-spacing: 1px;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	color: #fff;
+	background-color: #151515;
+	overflow: clip;
+}
+
+section {
+	max-width: 900px;
+}
+
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+.logo {
+	height: 3rem;
+	width: 3rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 1rem;
+}
+
+h1 {
+	margin: 1rem 0;
+	padding-bottom: 0.5rem;
+	text-align: center;
+	font-weight: 600;
+	border-bottom: 2px solid var(--accent);
+}
+
+/* RULES SECTION */
+.rules {
+	height: fit-content;
+	width: auto;
+	padding: 0.75rem;
+	margin: 0 auto;
+	line-height: 1.3rem;
+	background-color: var(--dark);
+	border: 2px solid var(--accent);
+	border-top: none;
+	border-right: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.rules h3,
+#close {
+	cursor: pointer;
+	width: fit-content;
+	transition: all 0.2s ease;
+}
+
+.rules h3:hover,
+#close:hover {
+	color: var(--accent);
+}
+
+#close {
+	font-size: 1.5rem;
+	font-weight: bold;
+	position: absolute;
+	top: 0.75rem;
+	right: 0.75rem;
+}
+
+ul {
+	list-style-type: square;
+	margin-left: 2rem;
+}
+
+li {
+	margin-top: 1rem;
+}
+
+/* LETTER COLOR CLASSES */
+.correct {
+	font-size: 2rem;
+	background-color: var(--correct);
+}
+
+.almost {
+	font-size: 1.5rem;
+	background-color: var(--almost);
+}
+
+.dark {
+	color: var(--gray);
+	background-color: var(--dark);
+}
+
+/* GAME OVER DISPLAY */
+.game-over {
+	width: fit-content;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.game-over h3 {
+	margin-top: 1rem;
+	font-weight: 400;
+}
+
+/* MEDIA QUERIES FOR ALL */
+@media (max-width: 700px) {
+	body {
+		height: fit-content;
+	}
+
+	.logo {
+		height: 2rem;
+		width: 2rem;
+	}
+
+	h1 {
+		margin: 0.5rem;
+		font-size: 1.5rem;
+		font-weight: 500;
+		border-bottom: none;
+	}
+
+	.rules {
+		padding: 0.5rem;
+	}
+
+	.rules h3 {
+		font-size: 1rem;
+		font-weight: 500;
+	}
+
+	li {
+		font-size: 0.8rem;
+	}
+
+	.gameboard {
+		width: 60%;
+		margin: 0.5rem auto;
+	}
+
+	.box {
+		font-size: 0.8rem;
+		border-width: 2px;
+	}
+
+	.correct {
+		font-size: 1.4rem;
+	}
+
+	.almost {
+		font-size: 1.1rem;
+	}
+
+	.keyboard-row {
+		margin-top: 0.5rem;
+	}
+
+	.key {
+		padding: 0.5rem 0;
+		font-size: 0.8rem;
+		border-width: 1px;
+	}
+
+	.large {
+		padding: 0.5rem;
+	}
+}
