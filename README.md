@@ -3,6 +3,7 @@
 <img width="500" src="https://github.com/mattwheeler-dev/react-wordle/assets/105622101/7920384c-a1b6-44fb-837d-f72148724d75" alt="Screenshot of React Wordle project" />
 
 Wordle, built for the web using Reactjs!
+<br/>
 Play it <a href="https://react-wordle-mwdev.web.app/" target="_blank">here</a>
 
 Decided to use Vite for this project, and also took it upon myself to improve upon the original game.
